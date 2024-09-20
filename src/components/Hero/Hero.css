@@ -1,0 +1,134 @@
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 95%; */
+    /* margin: auto; */
+    overflow: hidden;
+    background-color: #0D3824;
+    width: 70%;
+    height: 82vh;
+    margin-left: 2rem;
+    border-radius:2rem 0 0 2rem;
+}
+.half{
+    background: linear-gradient(rgba(26, 83, 25, 0.9),rgba(26, 83, 25, 0.9)),url(https://images.unsplash.com/photo-1525498128493-380d1990a112?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bGVhZnxlbnwwfHwwfHx8MA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: local;
+    background-color: #0D3824;
+    width: 30%;
+    height: 82vh;
+    margin-right: 2rem;
+    border-radius: 0 2rem  2rem 0; 
+    position: relative;
+}
+.background{
+    background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),url(https://img.freepik.com/free-photo/aokigahara-forest-highly-detailed-style_23-2151570272.jpg?size=626&ext=jpg&ga=GA1.1.1384126686.1723520578&semt=ais_hybrid);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    padding-top: 6rem;
+    display: flex;
+}
+.rightside{
+   width: 75%;
+   height: 70%;
+   background-color: var(--green) !important;
+   border-radius: 9rem;
+   position: absolute;
+   right: 65%;
+   top: 5rem;
+   /* position: relative; */
+}
+.semi{
+    position: absolute;
+    right: 2px;
+    bottom: 9px;
+
+}
+.fullcircle{
+    position: absolute;
+    width: 100%;
+    margin-top: 11rem !important;
+    margin-left: 2rem;
+}
+.handtree{
+    position: absolute;
+    width: 145%;
+    right: 3rem;
+    position: relative;
+}
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* .rightside img {
+    clip-path: circle(50%);
+    border-radius: 1rem;
+    animation: moveUpDown 4s ease-in-out infinite;
+    width: 90%;
+} */
+.liftide{
+    margin-left: 8rem;
+    margin-bottom: 4rem;
+}
+.game{
+    font-size: 3rem !important;
+    color: white !important;
+    font-weight: 500 !important;
+}
+.liftide h1{
+    color: var(--green);
+    font-weight: 700;
+    font-size: 6rem;
+}
+.btn{
+    padding: 15px 20px;
+    background-color: var(--green);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-top: 10px;
+    cursor: pointer;
+    color: white !important;
+}
+@media (min-width:320px) and (max-width:480px){
+    .flex{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .liftide h1{
+        text-align: center;
+        font-size: 4.5rem;
+    }
+    .liftide{
+        margin-left: 1rem;
+        margin-top: 7rem;
+    }
+    .game{
+        font-size: 2rem !important;
+        text-align: center !important;
+    }
+    .btn{
+        margin-left: 6.5rem;
+        margin-top: 2rem;
+    }
+    .rightside{
+        margin-top: 7rem;
+        margin-left: 1rem;
+    }
+}

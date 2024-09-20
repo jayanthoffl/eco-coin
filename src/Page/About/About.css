@@ -1,0 +1,13 @@
+.about{
+    width: 80%;
+    position: absolute;
+    top: 10rem;
+    left: 7rem;
+    text-align: center;
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .about{
+        left: 2rem;
+        padding-bottom: 2rem;
+    }
+}

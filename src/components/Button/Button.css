@@ -1,0 +1,147 @@
+.binboxforuploadimg {
+  position: relative;
+}
+.carbon{
+  padding-top: 15rem;
+  padding-left: 60%;
+}
+.uploadimg {
+  position: absolute;
+  top: 5rem;
+  left: 20%;
+  transform: translateX(-50%);
+  padding: 0px 2rem;
+  text-align: center;
+}
+
+.uploadimg h1 {
+  padding: 10px;
+  font-size: 1.5rem;
+  color: var(--green);
+  font-weight: 600;
+}
+
+.custum-file-upload {
+  height: 180px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  justify-content: center;
+  border: 2px dashed var(--black);
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 48px 35px -48px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+}
+
+.custum-file-upload .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .icon svg {
+  height: 60px;
+  fill: var(--black);
+}
+
+.custum-file-upload .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .text span {
+  font-weight: 400;
+  color: var(--black);
+}
+
+.custum-file-upload input {
+  display: none;
+}
+/* Button.css */
+/* Button.css */
+.toast-error {
+  background-color: #9c0e03 !important; /* Error background color */
+}
+
+.toast-error-body {
+  color: #ffffff !important; /* Black text color */
+}
+
+
+
+@media (min-width: 768px) {
+  .uploadimg {
+    top: 8rem;
+    padding: 0px 5rem;
+  }
+
+  .custum-file-upload {
+    height: 200px;
+    width: 300px;
+    gap: 20px;
+    padding: 1.5rem;
+  }
+
+  .custum-file-upload .icon svg {
+    height: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .uploadimg {
+    top: 10rem;
+    padding: 0px 10rem;
+  }
+
+  .custum-file-upload {
+    margin-left: 2rem;
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .uploadimg {
+    position: static;
+    transform: none;
+    margin: 0;
+    padding: 0px 1rem;
+  }
+
+  .custum-file-upload {
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  .custum-file-upload .icon svg {
+    height: 50px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .uploadimg h1 {
+    padding-top: 160px;
+    font-size: 2rem;
+    color: var(--green);
+    font-weight: 600;
+  }
+  .uploadimg {
+    padding: 0px 1rem;
+  }
+
+  .custum-file-upload {
+    width: 80%;
+    padding: 1rem;
+  }
+
+  .custum-file-upload .icon svg {
+    height: 40px;
+  }
+}
